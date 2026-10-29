@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chalchak-tts
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TTS_HOST
+        value: 0.0.0.0
